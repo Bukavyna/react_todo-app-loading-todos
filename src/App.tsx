@@ -65,7 +65,7 @@ export const App: React.FC = () => {
 
       <div className="todoapp__content">
         <header className="todoapp__header">
-          {/* this button should have `active` class only if all todos are completed */}
+
           {todos.length > 0 && (
             <button
               type="button"
