@@ -23,7 +23,7 @@ export const App: React.FC = () => {
 
         setTodos(data);
       } catch (err) {
-        setError(err?.message || 'Не вдалося завантажити завдання.');
+        setError(err?.message || 'Unable to load todos');
 
         timer = window.setTimeout(() => setError(null), 3000);
       } finally {
@@ -65,7 +65,6 @@ export const App: React.FC = () => {
 
       <div className="todoapp__content">
         <header className="todoapp__header">
-
           {todos.length > 0 && (
             <button
               type="button"
